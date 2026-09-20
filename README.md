@@ -1,4 +1,4 @@
-# 👨‍💻 Abdullah Khan — Full Stack Developer Portfolio
+# Abdullah Khan — Full Stack Developer Portfolio
 
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white)
