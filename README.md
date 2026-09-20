@@ -48,7 +48,6 @@ A modern, responsive personal portfolio website built with **React.js and Vite**
 
 ## About Me
 I'm Abdullah Khan, a Full Stack Developer focused on building modern, responsive, and user-friendly web applications.
-
 I work primarily with the MERN Stack and enjoy developing complete web applications from frontend interfaces to backend APIs and databases.
 
 ## Skills
