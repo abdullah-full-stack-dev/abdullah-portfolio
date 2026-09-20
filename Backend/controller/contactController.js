@@ -1,5 +1,5 @@
 import transporter from "../config/mail.js";
-import ContactModel from "../model/Contact.js";
+import ContactModel from "../model/contact.js";
 
 const contactMe = async (req, res) => {
     try {
