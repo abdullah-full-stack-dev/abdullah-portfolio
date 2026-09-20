@@ -42,5 +42,40 @@ A modern, responsive personal portfolio website built with **React.js and Vite**
 - React Helmet Async
 
 ### Deployment
+- Frontend: Vercel
+- Backend: Render
+- Database: MongoDB Atlas
 
-- Vercel
+## About Me
+I'm Abdullah Khan, a Full Stack Developer focused on building modern, responsive, and user-friendly web applications.
+
+I work primarily with the MERN Stack and enjoy developing complete web applications from frontend interfaces to backend APIs and databases.
+
+## Skills
+- HTML
+- CSS
+- JavaScript
+- React.js
+- Node.js
+- Express.js
+- MongoDB
+
+## Featured Projects
+Some of my projects include:
+- Alpha Gaming Store - Gaming-focused e-commerce platform
+- Outfique - Clothing e-commerce platform
+- Animex - Anime discovery and streaming-style platform
+- Golden Plate Restaurant - Restaurant website with backend integration
+
+## Contact
+If you'd like to connect or discuss a project, feel free to reach out.
+- LinkedIn: [Abdullah Khan](https://www.linkedin.com/in/abdullah-khan-9a2647406/)
+- GitHub: [Abdullah Khan](https://github.com/abdullah-full-stack-dev/abdullah-full-stack-dev.git)
+- Portfolio: [Abdullah Khan](https://abdullah-khan-dev.vercel.app/)
+
+## Support
+If you find this project useful or like the portfolio, consider giving the repository a ⭐.
+
+## Built with ❤️ by Abdullah Khan
+Full Stack Developer | React | Node.js | Express | MongoDB
+
