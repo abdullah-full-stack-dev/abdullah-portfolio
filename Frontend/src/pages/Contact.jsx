@@ -35,7 +35,7 @@ export const Contact = () => {
 
     try {
       setLoading(true)
-      const response = await axios.post("http://localhost:5000/api/auth/contact", formData);
+      const response = await axios.post("https://abdullah-portfolio-8tb1.onrender.com/api/auth/contact", formData);
       console.log(response.data);
       if (response.data.success === true) {
         toast.success("Your enquiry has been submitted successfully!");
