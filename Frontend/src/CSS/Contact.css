@@ -1,0 +1,137 @@
+.contact-section {
+    padding: 60px 30px 30px;
+    height: 100vh;
+}
+
+.contact-cont {
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.contact-content {
+    text-align: center;
+}
+
+.contact-cont p {
+    margin: 8px 0;
+}
+
+.contact-cont .form-cont {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.contact-cont form {
+    background-color: var(--sec-bg-color);
+    border-radius: 25px;
+    width: 600px;
+    padding: 30px 20px;
+}
+
+.app.light .contact-cont form,
+.app.light .contact-cont .input-icon-cont {
+    background-color: #c9c9c9;
+    box-shadow: 0px 1px 7px -1px #0a0a0a;
+}
+
+.contact-cont form .input-cont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-cont .input-icon-cont {
+    background: var(--bg-color);
+    padding: 14px 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-cont form .input-cont .input-icon {
+    font-size: 20px;
+}
+
+.contact-cont form input,
+.contact-cont form textarea {
+    width: 100%;
+    padding: 15px 10px;
+    margin: 6px 0;
+    background: var(--bg-color);
+    border: none;
+    border-radius: 8px;
+    resize: none;
+    color: var(--para-color);
+}
+
+.app.light .contact-cont form input,
+.app.light .contact-cont form textarea {
+    background-color: #c9c9c9;
+    box-shadow: 0px 1px 7px -1px #0a0a0a;
+    color: #0a0a0a;
+}
+
+.app.light .contact-cont form input::placeholder,
+.app.light .contact-cont form textarea::placeholder {
+    color: #0a0a0a;
+}
+
+.contact-cont form textarea {
+    height: 50px;
+}
+
+.contact-cont form input:active,
+.contact-cont form textarea:active {
+    outline: .5px solid #5294ff;
+}
+
+.contact-cont form input:focus,
+.contact-cont form textarea:focus {
+    outline: .5px solid #5294ff;
+}
+
+.contact-cont form button {
+    margin: 8px 0;
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 8px;
+    background: var(--bg-color);
+    border: 1.8px solid #5294ff;
+    color: var(--para-color);
+    letter-spacing: 1px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.contact-cont form button:hover {
+    background: #5294ff31;
+}
+
+.app.light .contact-cont form button {
+    background-color: #c9c9c9;
+    box-shadow: 0px 1px 7px -1px #0a0a0a;
+    color: #0a0a0a;
+    border: none;
+}
+
+.app.light .contact-cont form button:hover {
+    transform: translateY(-2px);
+}
+
+.app.light .contact-cont form button:focus {
+    transform: translateY(0);
+}
+
+@media (max-width:500px) {
+    .contact-section {
+        padding: 60px 15px 30px;
+        height: auto;
+    }
+
+    .contact-cont p {
+        font-size: 14px;
+    }
+}

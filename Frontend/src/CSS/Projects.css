@@ -1,0 +1,174 @@
+.Projects-section {
+    padding: 150px 100px 30px;
+}
+
+.Projects-cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.Projects-cont .project {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px;
+    background: #27272754;
+    border: 1px solid #27272754;
+    transition: .4s;
+}
+
+.Projects-cont .project:hover{
+    border: 1px solid #5294ff;
+}
+
+.app.light .Projects-cont .project:hover{
+    border: 1px solid #ffffff6b;
+    transform: translateY(-2px);
+}
+
+.app.light .Projects-cont .project{
+    background-color: #ffffff6b;
+    color: #0a0a0a;
+    box-shadow: 0px 1px 7px -1px #0a0a0a;
+}
+
+.app.light .Projects-cont .project a{
+    color: #0a0a0a;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+
+.Projects-cont .project-content {
+    padding-bottom: 12px;
+}
+
+.Projects-cont .project h2 {
+    margin: 8px 0;
+    font-size: 18px;
+
+}
+
+.view-disc-btn {
+    display: none;
+}
+
+.Projects-cont .project p {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+
+.Projects-cont .project span {
+    color: #6e6e6e;
+    font-size: 13px;
+}
+
+.Projects-cont .btns {
+    border-top: .1px solid #6e6e6e6b;
+}
+
+.Projects-cont .btns-cont {
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+
+}
+
+.Projects-cont .btns-cont a {
+    padding: 5px 10px;
+    color: var(--para-color);
+    border-radius: 25px;
+    transition: .4s;
+    border: 1px solid #5294ff;
+    cursor: pointer;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.Projects-cont .btns-cont a svg {
+    transform: translateY(2px);
+}
+
+.Projects-cont .btns-cont a:hover {
+    background: #5294ff31;
+}
+
+
+.mobile-hidden-project {
+    display: block;
+}
+
+.all-projects-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 100px;
+}
+
+.all-projects-btn a {
+    padding: 8px 10px;
+    font-size: 11px;
+    outline: none;
+    color: var(--para-color);
+    letter-spacing: 1px;
+    border-radius: 25px;
+    transition: .4s;
+    border: 1px solid #5294ff;
+    cursor: pointer;
+}
+
+.all-projects-btn a:hover {
+    background: #5294ff31;
+}
+
+.app.light .all-projects-btn a {
+    color: #0a0a0a;
+}
+
+.mobile-hidden-project {
+    display: none;
+}
+
+@media (max-width: 1440px) {
+
+    .Projects-section {
+        height: auto;
+        padding: 100px 30px 10px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .Projects-section {
+        padding: 100px 15px 10px;
+    }
+
+    .Projects-cont {
+        grid-template-columns: 1fr;
+    }
+
+    .Projects-cont .project {
+        width: 100%;
+    }
+
+    .Projects-cont .btns-cont a {
+        font-size: 11px;
+    }
+
+    .Projects-cont .project p,
+    .Projects-cont .project span {
+        font-size: 10px;
+    }
+
+}

@@ -1,0 +1,312 @@
+.hero-section {
+    padding: 200px 100px 10px;
+    width: 70%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.hero-section .design1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.3;
+    width: 100px;
+}
+
+
+.hero-cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Hero Image */
+
+.hero-cont .hero-img {
+    width: 300px;
+    margin: 0 auto;
+
+}
+
+.hero-cont .hero-img img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.app.light .hero-cont .hero-img img {
+    border: none;
+}
+
+.hero-cont .sec-hero-cont {
+    padding: 5px 20px;
+    border: 1px solid #5294ff;
+    border-radius: 25px;
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+    background: var(--bg-color);
+    gap: 20px;
+    color: #fff;
+    justify-content: center;
+    transform: translateY(-25px);
+    transition: .4s;
+}
+
+.app.light .hero-cont .sec-hero-cont {
+    background: #ccc;
+}
+
+.hero-cont .sec-hero-cont p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Hero Info */
+
+.hero-cont .hero-info h3 {
+    background: #5294ff31;
+    padding: 10px 15px;
+    width: fit-content;
+    font-size: 10px;
+    letter-spacing: 1.2px;
+    border-radius: 20px;
+}
+
+.hero-cont .hero-info h1 {
+    margin: 10px 0 7px;
+}
+
+.hero-cont .hero-info p {
+    margin: 10px 0;
+}
+
+.hero-cont .hero-btn-cont {
+    display: flex;
+    align-items: center;
+}
+
+.hero-cont .hero-btn {
+    padding: 12px 22px;
+    outline: none;
+    color: var(--para-color);
+    border-radius: 25px;
+    transition: .4s;
+    border: 1px solid #5294ff;
+    cursor: pointer;
+}
+
+.hero-cont .hero-btn.btn1 {
+    background: #5294ff31;
+    margin-right: 13px;
+}
+
+.hero-cont .hero-btn.btn1:hover {
+    background: transparent;
+}
+
+.btn2-cont {
+    display: flex;
+}
+
+.hero-cont .hero-btn.btn2 {
+    background: transparent;
+}
+
+.hero-cont .hero-btn.btn2:hover {
+    background: #5294ff31;
+}
+
+.hero-cont .hero-btn.btn2 .download-icon {
+    transition: .4s;
+    transform: translateY(2px);
+}
+
+.hero-cont .hero-btn.btn2:hover .download-icon {
+    transform: rotate(-25deg);
+}
+
+.hero-cont .about-point {
+    color: #ffffff6b;
+    letter-spacing: 1px;
+    font-weight: 200;
+
+}
+
+.hero-social-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+
+.hero-social-icons .social-icon {
+    padding: 5px 9px;
+    font-size: 22px;
+    border: 1px solid #5294ff;
+    border-radius: 50%;
+    color: var(--para-color);
+    cursor: pointer;
+    transition: .4s;
+}
+
+.hero-social-icons .social-icon:hover {
+    background: #5294ff31;
+}
+
+.hero-social-icons .social-icon a {
+    color: var(--para-color);
+
+}
+
+.hero-social-icons .social-icon svg {
+    transform: translateY(3px);
+}
+
+.app.light .hero-social-icons .social-icon svg {
+    color: #0a0a0a;
+}
+
+
+/* MARQUEE */
+
+.marquee {
+    width: 60%;
+    margin: 30px auto 0;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 20px 0;
+}
+
+.marquee-track {
+    display: inline-flex;
+    align-items: center;
+    width: max-content;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee-item {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-right: 35px;
+}
+
+.marquee-item b {
+    font-size: 14px;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+@media (max-width:1440px) {
+    .hero-section {
+        padding: 150px 60px 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-cont {
+        gap: 30px;
+    }
+}
+
+
+
+@media (max-width:1000px) {
+    .hero-section {
+        padding: 100px 30px 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-cont {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-cont .hero-info {
+        text-align: center;
+    }
+
+    .hero-cont .hero-info h3 {
+        margin: 0 auto;
+    }
+
+    .hero-cont .hero-btn-cont,
+    .hero-social-icons {
+        justify-content: center;
+    }
+}
+
+@media (max-width:786px) {
+    .hero-section {
+        padding: 80px 30px 10px;
+    }
+
+    .hero-cont .hero-img {
+        margin: 0 auto;
+    }
+
+    .hero-cont .hero-info {
+        padding-top: 10px;
+    }
+
+    .hero-cont .hero-btn {
+        padding: 14px 18px;
+    }
+
+    .marquee {
+        width: 90%;
+    }
+}
+
+@media (max-width:500px) {
+
+    .hero-section {
+        padding: 80px 15px 10px;
+    }
+
+    .hero-cont .hero-img {
+        width: 250px;
+    }
+
+    .hero-cont .sec-hero-cont p {
+        font-size: 11px;
+    }
+
+    .hero-cont .hero-info {
+        padding-right: 10px;
+    }
+
+    .hero-cont .hero-info h3 {
+        font-size: 8px;
+    }
+
+    .hero-cont .hero-info h1 {
+        font-size: 23px;
+    }
+
+    .hero-cont .hero-info p {
+        font-size: 14px;
+    }
+
+    .hero-cont .hero-btn {
+        padding: 12px 18px;
+        font-size: 11px;
+    }
+
+
+}

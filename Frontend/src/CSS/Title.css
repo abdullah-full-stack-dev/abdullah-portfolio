@@ -1,0 +1,9 @@
+.title {
+    margin: 10px auto 30px;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    width: fit-content;
+    border-radius: 25px;
+    background: #5294ff31;
+}

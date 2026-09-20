@@ -1,0 +1,136 @@
+.footer-section {
+    width: 80%;
+    margin: 0 auto;
+    margin: 80px auto 10px;
+    padding: 20px;
+    background-color: #131313;
+    border-radius: 25px;
+}
+
+.app.light .footer-section {
+    background-color: #afafaf;
+    box-shadow: 0px 1px 7px 1px #0a0a0a;
+    margin: 80px auto 0;
+    transform: translateY(-10px);
+}
+
+.footer-cont {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.footer-cont .footer-logo-cont {
+    width: fit-content;
+}
+
+.footer-cont .footer-logo-cont h1 {
+    font-family: "Space Grotesk", sans-serif;
+    transition: .4s;
+}
+
+.footer-cont .footer-logo-cont h1:hover {
+    opacity: 0.7;
+}
+
+.footer-cont .footer-tagline {
+    margin-bottom: 8px;
+}
+
+.footer-links-cont {
+    display: flex;
+    gap: 50px;
+    padding-right: 30px;
+}
+
+
+.footer-cont .footer-part li,
+.footer-cont .footer-part li a {
+    text-align: center;
+    color: var(--para-color);
+    font-size: 13px;
+    margin: 6px 0;
+    letter-spacing: 1px;
+    transition: .4s;
+}
+
+.footer-cont .footer-part li:hover,
+.footer-cont .footer-part li a:hover {
+    color: #5294ff;
+}
+
+.app.light .footer-cont .footer-part li,
+.app.light .footer-cont .footer-part li a,
+.app.light .footer-section p {
+    color: #0a0a0a;
+}
+
+.app.light .footer-cont .footer-part li:hover,
+.app.light .footer-cont .footer-part li a:hover {
+    color: #2563EB;
+}
+
+.footer-section .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-top: .1px solid #2e2e2e;
+    padding-top: 20px;
+}
+
+.footer-section .footer-bottom p {
+    color: var(--para-color);
+}
+
+.footer-bottom button {
+    padding: 12px 20px;
+    border: 1px solid #5294ff;
+    background: none;
+    color: var(--para-color);
+    outline: none;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.footer-bottom button:hover {
+    background: #5294ff31;
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        width: 90%;
+    }
+
+    .footer-cont .footer-logo-cont {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-cont {
+        display: inline;
+        text-align: center;
+    }
+
+    .footer-links-cont {
+        margin-top: 20px;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    .footer-cont .footer-part li,
+    .footer-cont .footer-part li a {
+        font-size: 11px;
+    }
+
+    .footer-section p {
+        font-size: 14px;
+    }
+
+    .footer-bottom button {
+        padding: 10px 16px;
+        font-size: 10px;
+    }
+}
